@@ -23,6 +23,21 @@ namespace BeFit.Controllers
             return View();
         }
 
+        public IActionResult Cwiczenies()
+        {
+            return View();
+        }
+
+        public IActionResult SesjaTreningowas()
+        {
+            return View();
+        }
+
+        public IActionResult Podsumowanies()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

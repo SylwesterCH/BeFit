@@ -10,7 +10,6 @@ namespace BeFit.Models
         [Display(Name = "Nazwa Ćwiczenia", Description = "Wpisz typ ćwiczenia")]
         public string Name { get; set; }
 
-        public int SesjaTreningowaId { get; set; }
-        public SesjaTreningowa SesjaTreningowa { get; set; }
+        public ICollection<Podsumowanie> Podsumowania { get; set; } = new List<Podsumowanie>();
     }
 }

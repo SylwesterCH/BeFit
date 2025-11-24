@@ -8,15 +8,18 @@ namespace BeFit.Models
 
         [Required]
         [Display(Name = "Sesja treningowa", Description = "Numer sesji treningowej")]
-        public int SesjaId { get; set; }
-
-        public SesjaTreningowa Sesja { get; set; }
+        public int SesjaTreningowaId { get; set; }
+        public SesjaTreningowa SesjaTreningowa { get; set; }
 
         [Required]
         [Display(Name = "Ćwiczenie", Description = "Jaki typ ćwiczenia wykonano")]
         public int CwiczenieId { get; set; }
+        public Cwiczenie Cwiczenie { get; set;}
 
-        public Cwiczenie Cwiczenie { get; set; }
+        [Required]
+        [Display(Name = "Użytkownik", Description = "Osobiste podsumowanie 4 tygodni")]
+        public string AppUserId {  get; set; }
+        public AppUser AppUser { get; set; }
 
         [Display(Name = "Obciążenie", Description = "Podaj ile Kg użyto do ćwiczenia")]
         public double Obciazenie { get; set; }
