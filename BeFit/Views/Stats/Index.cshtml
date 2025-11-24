@@ -1,0 +1,27 @@
+﻿@model IEnumerable<dynamic>
+
+    <h2>Statystyki ćwiczeń z ostatnich 4 tygodni</h2>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Ćwiczenie</th>
+                <th>Ile razy wykonano</th>
+                <th>Łączna liczba powtórzeń</th>
+                <th>Średnie obciążenie</th>
+                <th>Maksymalne obciążenie (Kg)</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Cwiczenie</td>
+                <td>@item.WykonaneRazy</td>
+                <td>@item.LacznePowtorzenia</td>
+                <td>@item.SrednieObciazenie</td>
+                <td>@item.MaksymalneObciazenie</td>
+            </tr>
+        }
+        </tbody>
+    </table>
