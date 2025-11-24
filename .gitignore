@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/BeFit/mydatabase.db-wal
+/BeFit/mydatabase.db-shm
+/BeFit/mydatabase.db
